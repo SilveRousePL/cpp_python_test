@@ -1,7 +1,10 @@
-#include <bits/stdc++.h>
- 
-extern "C" float distance(int x1, int y1, int x2, int y2)
-{
-    return sqrt(pow(x2 - x1, 2) +
-                pow(y2 - y1, 2) * 1.0);
+#include <cstdlib> 
+
+extern "C" void foobar(const int m, const int n, const 
+double **x, double **y) 
+{ 
+    size_t i, j; 
+    for(i=0; i<m; i++) 
+        for(j=0; j<n; j++) 
+            y[i][j] = x[i][j]; 
 }
